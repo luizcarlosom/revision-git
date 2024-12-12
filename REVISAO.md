@@ -120,3 +120,92 @@ git add
 ```
     git diff --cached
 ```
+
+# Comando para restaurar o que tá no index/stagging para o working directory
+
+```
+    git restore .
+```
+
+# Comando para restaurar o que está no index para o que está no object database
+```
+    git restore --staged .
+```
+
+# Comandos para deletar e renomear arquivos
+*Deletar*
+```
+    git rm nome-do-arquivo.py
+```
+*Renomear*
+```
+    git mv nome-do-arquivo.py novo-nome-do-arquivo.py
+```
+
+# Comando para editar mensagem do ultimo commit
+
+```
+    git commit --amend -m "new message"
+```
+
+# Comando para renomear branch
+
+```
+    git branch -m new-name
+```
+
+# Comando para resetar para um commit anterior
+
+```
+    git reset "primeiros 7 numeros do hash do commit"
+```
+*Ou*
+```
+    git reset HEAD~1 ou 2 ou 3...
+```
+
+# Comando para voltar o working directory e o index/staggin para ficar igual ao object database
+
+```
+    git reset --soft
+```
+
+# Comando para voltar o que está no object database para apenas o index
+
+```
+    git reset --mixed 
+```
+
+# Comando para resetar o que está no index/stagging para o working directory e deixar os trÊs diretorios iguais
+
+```
+    git reset --hard
+```
+
+# Comando para resetar para um commit anterior
+```
+    git revert <nome do commit> ou HEAD
+```
+# Nome do repositório remoto
+```
+    git remote
+```
+
+# Subir branch local para repositório remoto
+```
+    git push -u origin local-branch
+```
+*Ou*
+```
+    git push --set-upstream origin local-branch
+```
+
+# Comando para sincronizar branches
+```
+    git fetch
+```
+
+# Comando para sincronizar branches e apagar as apagadas
+```
+    git fetch -p ou --prune
+```
